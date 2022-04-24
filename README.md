@@ -1,3 +1,3 @@
-# Spigot1.8.8Template
+# AntiIllegals
 
-A template for plugins that use Spigot 1.8.8.
+Stops illegal items from being used, but still allowing them to be in shulker boxes when used through hoppers.

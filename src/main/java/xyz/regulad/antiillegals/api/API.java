@@ -1,4 +1,4 @@
-package xyz.regulad.spigottemplate.api;
+package xyz.regulad.antiillegals.api;
 
 import org.bukkit.plugin.Plugin;
 

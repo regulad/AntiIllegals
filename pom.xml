@@ -5,10 +5,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>xyz.regulad</groupId>
-    <artifactId>spigottemplate</artifactId>
+    <artifactId>antiillegals</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>jar</packaging>
-    <name>Spigot188Template</name>
+    <name>AntiIllegals</name>
 
     <developers>
         <developer>
@@ -19,7 +19,7 @@
     </developers>
 
     <description>
-        A template for plugins that use Spigot 1.8.8.
+        Stops illegal items from being used, but still allowing them to be in shulker boxes when used through hoppers.
     </description>
 
     <properties>
@@ -164,9 +164,12 @@
                     <options>
                         <option>-dontwarn</option> <!--1.8.8 conflict-->
                         <option>-allowaccessmodification</option>
-                        <option>-keep public class ${project.groupId}.${project.artifactId}.dep.net.kyori.adventure.** { *; }</option> <!--They love their reflection...-->
+                        <option>-keep public class ${project.groupId}.${project.artifactId}.dep.net.kyori.adventure.** {
+                            *; }
+                        </option> <!--They love their reflection...-->
                         <option>-keep public class ${project.groupId}.${project.artifactId}.api.** { *; }</option>
-                        <option>-keep public class ${project.groupId}.${project.artifactId}.${project.name} { *; }</option>
+                        <option>-keep public class ${project.groupId}.${project.artifactId}.${project.name} { *; }
+                        </option>
                     </options>
                     <libs>
                         <lib>${java.home}/jmods</lib>
@@ -196,7 +199,7 @@
         <dependency>
             <groupId>org.spigotmc</groupId>
             <artifactId>spigot-api</artifactId>
-            <version>1.8.8-R0.1-SNAPSHOT</version>
+            <version>1.12.2-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
